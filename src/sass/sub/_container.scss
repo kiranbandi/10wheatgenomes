@@ -1,0 +1,49 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    #root {
+        width: 100%;
+        min-height: 100%;
+        padding-bottom: 75px;
+        position: relative;
+        #app-container {
+            min-height: 100%;
+            .paws-loader {
+                margin: 10% auto;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0px;
+                height: auto;
+                padding: 5px 0px;
+                background: #1a1c22;
+                .footer-inner {
+                    display: inline-block;
+                    a {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        color: #307691;
+                    }
+                }
+            }
+            .bottom-right {
+                float: right;
+                margin-top: 6px;
+            }
+            .bottom-left {
+                float: left;
+            }
+            span.pole-holder {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        .inlay-icon {
+            position: absolute;
+            font-size: 25px;
+            padding: 1px 7px;
+        }
+    }
+}
