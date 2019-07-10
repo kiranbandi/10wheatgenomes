@@ -4,18 +4,18 @@ let backgroundStyle = { backgroundImage: 'url(assets/img/wheat_banner.jpg)' };
 import ReactSelect from 'react-select';
 
 const wheatVarieties = [
-  { "label": "Arina", "value": "AR" },
-  { "label": "Artificial Synthetic Hexaploid", "value": "AS" },
-  { "label": "Chinese Spring", "value": "CS" },
-  { "label": "Jagger", "value": "JG" },
-  { "label": "Julius", "value": "JL" },
-  { "label": "Lancer", "value": "LC" },
-  { "label": "Landmark", "value": "LM" },
-  { "label": "Mace", "value": "MC" },
-  { "label": "Norino", "value": "NO" },
-  { "label": "Spelta", "value": "SP" },
-  { "label": "Stanley", "value": "ST" },
-  { "label": "Symattis", "value": "SY" }
+  { "label": "Arina", "value": "arinalrfor" },
+  { "label": "Artificial Synthetic Hexaploid", "value": "ashsyn" },
+  { "label": "Chinese Spring", "value": "chinese" },
+  { "label": "Jagger", "value": "jagger" },
+  { "label": "Julius", "value": "julius" },
+  { "label": "Lancer", "value": "lancer" },
+  { "label": "Landmark", "value": "landmark" },
+  { "label": "Mace", "value": "mace" },
+  { "label": "Norino", "value": "norin61" },
+  { "label": "Spelta", "value": "spelta" },
+  { "label": "Stanley", "value": "stanley" },
+  { "label": "Symattis", "value": "sy_mattis" }
 ];
 
 class Home extends Component {
@@ -42,10 +42,10 @@ class Home extends Component {
   redirectPage(event) {
     const { source = 'AR', target = 'JG' } = this.state;
     if (event.target.id == 'synvisio') {
-      window.open("https://synvisio.usask.ca/#/Dashboard/" + "wheat-" + source.value + "-" + target.value, "_blank");
+      window.open("https://synvisio.usask.ca/#/Dashboard/"+ source.value + "_" + target.value, "_blank");
     }
     else {
-      window.open("https://accusyn.usask.ca/?gff=bnapus&collinearity=bnapus", "_blank");
+      window.open("https://accusyn.usask.ca/?gff="+ source.value + "_" + target.value + "_coordinate"+"&collinearity="+source.value + "_" + target.value + "_collinear", "_blank");
     }
   }
 
