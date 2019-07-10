@@ -4,18 +4,18 @@ let backgroundStyle = { backgroundImage: 'url(assets/img/wheat_banner.jpg)' };
 import ReactSelect from 'react-select';
 
 const wheatVarieties = [
-  { "label": "Arina", "value": "arinalrfor" },
+  { "label": "ArinaLrFor", "value": "arinalrfor" },
   { "label": "Artificial Synthetic Hexaploid", "value": "ashsyn" },
   { "label": "Chinese Spring", "value": "chinese" },
   { "label": "Jagger", "value": "jagger" },
   { "label": "Julius", "value": "julius" },
   { "label": "Lancer", "value": "lancer" },
-  { "label": "Landmark", "value": "landmark" },
+  { "label": "CDC Landmark", "value": "landmark" },
+  { "label": "CDC Stanley", "value": "stanley" },
   { "label": "Mace", "value": "mace" },
-  { "label": "Norino", "value": "norin61" },
-  { "label": "Spelta", "value": "spelta" },
-  { "label": "Stanley", "value": "stanley" },
-  { "label": "Symattis", "value": "sy_mattis" }
+  { "label": "Norin 61", "value": "norin61" },
+  { "label": "Spelt (PI190962)", "value": "spelta" },
+  { "label": "SY Mattis", "value": "sy_mattis" }
 ];
 
 class Home extends Component {
