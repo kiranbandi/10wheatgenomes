@@ -23,8 +23,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      source: { "label": "Arina", "value": "AR" },
-      target: { "label": "Jagger", "value": "JG" }
+      source: { "label": "Arina", "value": "arinalrfor" },
+      target: { "label": "Jagger", "value": "jagger" }
     };
     this.onSelectGenome = this.onSelectGenome.bind(this);
     this.redirectPage = this.redirectPage.bind(this);
@@ -40,7 +40,7 @@ class Home extends Component {
   }
 
   redirectPage(event) {
-    const { source = 'AR', target = 'JG' } = this.state;
+    const { source = 'arinalrfor', target = 'jagger' } = this.state;
     if (event.target.id == 'synvisio') {
       window.open("https://synvisio.usask.ca/#/Dashboard/"+ source.value + "_" + target.value, "_blank");
     }
